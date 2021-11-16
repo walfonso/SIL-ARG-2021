@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<Instituciones.Models.Persona>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Gestión de Referentes";
 }
 
-<h2>Index</h2>
+<h2>Listado de personas referentes</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Agregar", "Create")
 </p>
 <table class="table">
     <tr>
@@ -71,9 +71,9 @@
             @Html.DisplayFor(modelItem => item.redes)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.idPersona }) |
-            @Html.ActionLink("Details", "Details", new { id=item.idPersona }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.idPersona })
+            <a class="btn btn-default" href="~/Personas/Edit/@item.idPersona">Editar</a>
+            <a class="btn btn-default" href="~/Personas/Details/@item.idPersona">Ver</a>
+            <a class="btn btn-danger" href="~/Personas/Delete/@item.idPersona">Eliminar</a>
         </td>
     </tr>
 }
