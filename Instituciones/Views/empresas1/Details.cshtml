@@ -1,0 +1,93 @@
+﻿@model Instituciones.Models.empresa
+
+@{
+    ViewBag.Title = "Detalles de la Empresa";
+}
+
+<h2>Detalles</h2>
+
+<div class="panel panel-default">
+    <div class="panel panel-heading">Información de la Empresa</div>
+        <div class="panel-body">
+            <h4>Empresa</h4>
+            <hr />
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.cuit)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.cuit)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.razonSocial)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.razonSocial)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.domicilio)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.domicilio)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.telefono)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.telefono)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.email)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.email)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.nomFantasia)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.nomFantasia)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.rubro)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.rubro)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.actividadPrincipal)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.actividadPrincipal)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Contactos)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Contactos)
+                </dd>
+
+            </dl>
+        </div>
+        <p>
+            @Html.ActionLink("Editar", "Edit", new { id = Model.codigo }) |
+            @Html.ActionLink("Atras", "Index")
+        </p>
+    </div>
+</div>
