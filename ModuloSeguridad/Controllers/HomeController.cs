@@ -9,13 +9,13 @@ namespace ModuloSeguridad.Controllers
 {
     public class HomeController : Controller
     {
-        [AuthorizeUser(idOperacion:1)]
+        //[AuthorizeUser(idOperacion:1)]
         public ActionResult Index()
         {
             return View();
         }
 
-        [AuthorizeUser(idOperacion: 2)]
+        //[AuthorizeUser(idOperacion: 2)]
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
@@ -23,7 +23,7 @@ namespace ModuloSeguridad.Controllers
             return View();
         }
 
-        [AuthorizeUser(idOperacion:3)]
+//        [AuthorizeUser(idOperacion:3)]
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
